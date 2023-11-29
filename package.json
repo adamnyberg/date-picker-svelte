@@ -9,6 +9,7 @@
 		"build:site": "vite build",
 		"preview": "vite preview",
 		"package": "svelte-package",
+		"prepare": "npm run package",
 		"prepublishOnly": "npm run package",
 		"lint": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && eslint src && prettier --check src",
 		"format": "eslint --fix src && prettier --write src",
